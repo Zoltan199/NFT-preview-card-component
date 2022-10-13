@@ -9,6 +9,7 @@
 
 *{
     font-family: 'Outfit';
+    box-sizing: border-box;
 }
 
 body{
@@ -34,10 +35,40 @@ body{
     padding-top: 22px;
 }
 
-.card img{
+.card .card-img{
+    position: relative;
+    /*overflow: hidden;*/
+    height: 280px
+}
+
+.card .card-img img{
     width: 280px;
     height: auto;
     border-radius: 3%;
+}
+
+.card-img .view{
+    position: absolute;
+    background-color: rgba(0, 255, 247, 0.4);
+    width: 100%;
+    border-radius: 3%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.card-img .view img{
+    width: 30px;
+}
+
+.card-img:hover .view{
+    visibility: visible;
+    cursor: pointer;
 }
 
 .card .description{
@@ -50,6 +81,11 @@ body{
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 0.5px;
+}
+
+.card .description h1:hover{
+    color:  var(--cyan);
+    cursor: pointer;
 }
 
 .card .description p{
@@ -119,6 +155,15 @@ body{
     top: 10px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .description .creation span{
     color: var(--whitee);
+}
+
+.description .creation span:hover{
+    color: var(--cyan);
+    cursor: pointer;
 }
