@@ -1,0 +1,108 @@
+:root{
+    --dbluemain : hsl(217, 54%, 11%);
+    --dbluecard: hsl(216, 50%, 16%);
+    --dblueline: hsl(215, 32%, 27%);
+    --whitee: hsl(0, 0%, 100%);
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+*{
+    font-family: 'Outfit';
+}
+
+body{
+    background-color: var(--dbluemain);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dbluecard);
+    width: 325px;
+    border-radius: 5%;
+    flex-direction: column;
+    padding-top: 22px;
+}
+
+.card img{
+    width: 280px;
+    height: auto;
+    border-radius: 3%;
+}
+
+.card .description{
+    padding: 22px;
+    padding-top: 10px
+}
+
+.card .description h1{
+    color: var(--whitee);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.card .description p{
+    color: var(--softblue);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+.description .price-days{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.price-days .price{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.price-days .days{
+    color: var(--softblue);
+}
+
+.price-days .price img{
+    width: 10px;
+    height: auto;
+}
+
+.price-days .days >img{
+    width: 15px;
+    height: auto;
+}
+
+.description hr{
+    border: none;
+    border-top:  1px solid var(--softblue);
+}
+
+.description .creation{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.description .creation img{
+    border: 1px solid var(--whitee);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+.description .creation span{
+    color: var(--whitee);
+}
