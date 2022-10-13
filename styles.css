@@ -66,6 +66,10 @@ body{
     font-size: 14px;
 }
 
+.price-days{
+    margin-bottom: 15px;
+}
+
 .price-days .price{
     color: var(--cyan);
     font-weight: 600;
@@ -75,14 +79,24 @@ body{
     color: var(--softblue);
 }
 
-.price-days .price img{
+.price-days .price >img{
     width: 10px;
     height: auto;
+    position: relative;
+    top: 3px;
 }
+
+.price-days .price span{
+    margin-left: 3px;
+}
+
 
 .price-days .days >img{
     width: 15px;
     height: auto;
+    position: relative;
+    right: 5px;
+    top: 2px;
 }
 
 .description hr{
@@ -101,6 +115,8 @@ body{
     border-radius: 100%;
     width: 25px;
     height: 25px;
+    position: relative;
+    top: 10px;
 }
 
 .description .creation span{
